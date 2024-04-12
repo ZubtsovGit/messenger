@@ -1,0 +1,13 @@
+<div class="form"> 
+    <form class="{{formClass}}">
+        <h2 class="form__heading {{headingClass}}">{{heading}}</h2> 
+        {{#each fields}}
+            {{> Input label=this.label name=this.name type=this.type }} 
+        {{/each}}
+        <div class="form__buttons"> 
+            {{#each buttons}}
+                {{> Button label=this.label type=this.type action=this.action }} 
+            {{/each}}
+        </div>
+    </form>
+</div>

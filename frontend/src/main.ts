@@ -2,13 +2,17 @@ import Handlebars from "handlebars";
 import * as Components from "./components";
 import * as Pages from "./pages";
 
+// Pages for navigation
 const pages = {
   nav: [Pages.NavigatePage],
-  login: [Pages.LoginPage, { test: "Welcome back!" }],
+  login: [Pages.LoginPage],
   signup: [Pages.SignUp],
-  list: [Pages.ListPage],
-  profile: [Pages.Profile],
-  feedback: [Pages.Feedback],
+  chat: [Pages.ChatPage],
+  profile: [Pages.UserProfilePage],
+  editProfile: [Pages.EditProfilePage],
+  editProfilePassword: [Pages.EditPasswordPage],
+  error404: [Pages.Error404],
+  error500: [Pages.Error500],
 };
 
 Object.entries(Components).forEach(([name, component]) => {

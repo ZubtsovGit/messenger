@@ -1,0 +1,34 @@
+<div class="profile">
+  {{#with (userData)}}
+  <div class="profile__image-container">
+    <img
+      class="profile__image"
+      alt="{{name}}'s profile image"
+      src="{{avatar}}"
+    />
+    <div class="profile__name">{{name}}</div>
+    {{/with}}
+  </div>
+
+  <div class="profile__details">
+    {{#each details}}
+      <div class="profile__detail">
+        <span class="profile__label">{{this.label}}</span><span
+          class="profile__value"
+        >{{this.value}}</span>
+      </div>
+      <div class="profile__line"></div>
+    {{/each}}
+  </div>
+
+  <div class="profile__actions">
+    {{#each actions}}
+      <div
+        class="profile__action profile__action--{{this.class}}"
+      >{{this.label}}</div>
+    {{/each}}
+    {{#each button}}
+      {{> Button label=this.label type=this.type action=this.action }} 
+    {{/each}}
+  </div>
+</div>

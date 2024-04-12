@@ -1,0 +1,34 @@
+// Variables
+$main-color: #3369f3;
+$second-color: #e4edfd;
+$error-color: #ff2f2f;
+$text-color: #1e1e1e;
+$text-secondary-color: #999;
+$white: #ffffff;
+
+// Shadows
+$box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0 0 6px 0 #00000024;
+
+// Font Sizes
+$font-size-small: 11px;
+$font-size-normal: 13px;
+$font-size-large: 16px;
+$font-size-x-large: 40px;
+
+// Spacings
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+
+// Border Radius
+$border-radius-small: 8px;
+$border-radius-medium: 12px;
+$border-radius-circle: 50%;
+
+// Base styles
+html,
+body,
+#app {
+  height: 100%;
+}

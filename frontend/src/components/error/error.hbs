@@ -1,0 +1,14 @@
+<div class="error">
+  <div class="error__message-container">
+    <div class="error__status error__text">{{error}}</div>
+    <div class="error__message error__text">{{message}}</div>
+  </div>
+
+  <div class="error__actions">
+    {{#each actions}}
+      <div
+        class="error__action error__text error__action--{{this.class}}"
+      >{{this.label}}</div>
+    {{/each}}
+  </div>
+</div>

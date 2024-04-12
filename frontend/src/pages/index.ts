@@ -1,6 +1,11 @@
 export { NavigatePage } from "./navigate";
 export { LoginPage } from "./login";
 export { SignUp } from "./signup";
-export { ListPage } from "./list";
-export { Profile } from "./profile";
-export { Feedback } from "./feedback";
+export { ChatPage } from "./chat";
+
+export { UserProfilePage } from "./userProfile";
+export { EditProfilePage } from "./editProfile";
+export { EditPasswordPage } from "./editPassword";
+
+export { Error404 } from "./error404";
+export { Error500 } from "./error500";

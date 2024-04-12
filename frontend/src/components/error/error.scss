@@ -1,0 +1,44 @@
+.error {
+  background-color: $white;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  font-family: Inter;
+  height: 100%;
+
+  &__text {
+    text-align: center;
+    color: $text-color;
+  }
+
+  &__message-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__status {
+    font-size: $font-size-x-large;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+    margin-bottom: 20px;
+  }
+
+  &__message {
+    font-size: $font-size-large;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  &__action {
+    margin-top: 100px;
+    cursor: pointer;
+    padding: 5px 0;
+    color: $main-color;
+    font-size: $font-size-large;
+    font-weight: 500;
+    line-height: 11px;
+  }
+}

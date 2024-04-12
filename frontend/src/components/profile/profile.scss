@@ -1,0 +1,59 @@
+.profile {
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: $box-shadow-light;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+
+  &__image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    border-radius: $border-radius-circle;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__details {
+    margin-bottom: 30px;
+  }
+
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__label,
+  &__value {
+    font-size: $font-size-normal;
+  }
+
+  &__line {
+    background-color: $second-color;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  &__action {
+    color: $main-color;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+
+  &__action--logout {
+    color: $error-color;
+  }
+}
