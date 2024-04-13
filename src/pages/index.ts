@@ -1,4 +1,3 @@
-export { NavigatePage } from "./navigate";
 export { LoginPage } from "./login";
 export { SignUp } from "./signup";
 export { ChatPage } from "./chat";

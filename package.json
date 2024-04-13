@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": ">=12"
+    "node": ">=13"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "npm run build && node server.js",
+    "dev": "vite",
     "build": "tsc && vite build"
   },
   "devDependencies": {

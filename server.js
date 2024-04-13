@@ -1,19 +1,18 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import { dirname } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const app = express();
+const __dirname = path.dirname(__filename);
 const PORT = 3000;
 
+const app = express();
+
 // Static from the 'dist' directory
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static("./dist"));
 
 // Serve index.html on the root path
-app.get("/", (req, res) => {
+app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "dist/index.html"));
 });
 

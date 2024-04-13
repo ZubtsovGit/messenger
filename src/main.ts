@@ -4,7 +4,6 @@ import * as Pages from "./pages";
 
 // Pages for navigation
 const pages = {
-  nav: [Pages.NavigatePage],
   login: [Pages.LoginPage],
   signup: [Pages.SignUp],
   chat: [Pages.ChatPage],
@@ -26,7 +25,49 @@ function navigate(page: string) {
   container.innerHTML = Handlebars.compile(source)(context);
 }
 
-document.addEventListener("DOMContentLoaded", () => navigate("nav"));
+document.addEventListener("DOMContentLoaded", (e) => {
+  //@ts-ignore
+  const path = e.target.location.pathname;
+
+  switch (path) {
+    case "/login": {
+      navigate("login");
+      break;
+    }
+    case "/signup": {
+      navigate("signup");
+      break;
+    }
+    case "/chat": {
+      navigate("chat");
+      break;
+    }
+    case "/profile": {
+      navigate("profile");
+      break;
+    }
+    case "/edit-profile": {
+      navigate("editProfile");
+      break;
+    }
+    case "/edit-password": {
+      navigate("editProfilePassword");
+      break;
+    }
+    case "/404": {
+      navigate("error404");
+      break;
+    }
+    case "/500": {
+      navigate("error500");
+      break;
+    }
+
+    default: {
+      window.location.pathname = "/login";
+    }
+  }
+});
 
 document.addEventListener("click", (e) => {
   //@ts-ignore
