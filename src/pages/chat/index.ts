@@ -1,5 +1,4 @@
 import Handlebars from "handlebars";
-import "./chat.scss";
 
 import user1 from "../../assets/01.jpg";
 import user2 from "../../assets/02.jpg";
