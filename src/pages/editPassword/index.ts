@@ -2,7 +2,6 @@ export { default as EditPasswordPage } from "./editPassword.hbs?raw";
 import Handlebars from "handlebars";
 
 import avatarImg from "../../assets/01.jpg";
-import "./editPassword.scss";
 
 Handlebars.registerHelper("userProfileDataChangePassword", () => ({
   name: "John",

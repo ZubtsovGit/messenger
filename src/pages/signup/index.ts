@@ -1,6 +1,5 @@
 import Handlebars from "handlebars";
 export { default as SignUp } from "./signup.hbs?raw";
-import "./signup.scss";
 
 Handlebars.registerHelper("signupFields", () => [
   { label: "Name", name: "first_name", type: "text" },
