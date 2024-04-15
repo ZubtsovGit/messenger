@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
 
     default: {
-      window.location.pathname = "/login";
+      navigate("login");
     }
   }
 });

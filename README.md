@@ -9,6 +9,20 @@ This repository contains the frontend part of the Messenger application, built u
 - **Dynamic rendering** with Handlebars templates.
 - **Express server** for serving built files.
 
+## Quick Navigation Links
+
+To navigate through different parts of the application, use the links below:
+
+- [Login Page](#/login)
+- [Sign Up Page](#/signup)
+- [Chat Page](#/chat)
+- [User Profile](#/profile)
+- [Edit Profile](#/edit-profile)
+- [Edit Profile Inputs](#/edit-profile-input)
+- [Change Password](#/edit-password)
+- [Error 404 Page](#/404)
+- [Error 500 Page](#/500)
+
 ## Live Demo
 
 Check out the live demo of the application [here](https://dan-messenger.netlify.app/).
