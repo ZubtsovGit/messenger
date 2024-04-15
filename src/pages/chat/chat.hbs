@@ -1,0 +1,10 @@
+<div>
+    {{> Button label="go to home" type="link" }}
+    <div>
+        <ul>
+            {{#each (users)}}
+                {{> UserCard}}
+            {{/each}}
+        </ul>
+</div>
+</div>

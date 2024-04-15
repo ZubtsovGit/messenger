@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .form--login,
+  .form--signup {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 50px 30px 30px;
+    box-shadow: $box-shadow-medium;
+    border-radius: $border-radius-medium;
+  }
+
+  &__heading--login,
+  &__heading--signup {
+    text-align: center;
+    font-size: $font-size-large;
+    line-height: 20px;
+  }
+}
