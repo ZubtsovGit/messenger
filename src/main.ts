@@ -9,6 +9,7 @@ const pages = {
   chat: [Pages.ChatPage],
   profile: [Pages.UserProfilePage],
   editProfile: [Pages.EditProfilePage],
+  editProfileInput: [Pages.EditProfileInputPage],
   editProfilePassword: [Pages.EditPasswordPage],
   error404: [Pages.Error404],
   error500: [Pages.Error500],
@@ -48,6 +49,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
     case "/edit-profile": {
       navigate("editProfile");
+      break;
+    }
+    case "/edit-profile-input": {
+      navigate("editProfileInput");
       break;
     }
     case "/edit-password": {
