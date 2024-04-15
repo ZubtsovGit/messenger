@@ -13,15 +13,15 @@ This repository contains the frontend part of the Messenger application, built u
 
 To navigate through different parts of the application, use the links below:
 
-- [Login Page](#/login)
-- [Sign Up Page](#/signup)
-- [Chat Page](#/chat)
-- [User Profile](#/profile)
-- [Edit Profile](#/edit-profile)
-- [Edit Profile Inputs](#/edit-profile-input)
-- [Change Password](#/edit-password)
-- [Error 404 Page](#/404)
-- [Error 500 Page](#/500)
+- [Login Page](https://dan-messenger.netlify.app/login)
+- [Sign Up Page](https://dan-messenger.netlify.app/signup)
+- [Chat Page](https://dan-messenger.netlify.app/chat)
+- [User Profile](https://dan-messenger.netlify.app/profile)
+- [Edit Profile](https://dan-messenger.netlify.app/edit-profile)
+- [Edit Profile Inputs](https://dan-messenger.netlify.app/edit-profile-input)
+- [Change Password](https://dan-messenger.netlify.app/edit-password)
+- [Error 404 Page](https://dan-messenger.netlify.app/404)
+- [Error 500 Page](https://dan-messenger.netlify.app/500)
 
 ## Live Demo
 
