@@ -1,0 +1,66 @@
+.chat-layout {
+  display: flex;
+  width: 100%;
+
+  .chat-sidebar {
+    width: 25%;
+    border-right: 1px solid $second-color;
+  }
+
+  .chat-main {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.chat-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; // Full width of the sidebar
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    padding: $spacing-small;
+    color: $text-color;
+  }
+
+  &__icon {
+    margin-right: $spacing-small;
+  }
+
+  &__title {
+    font-size: $font-size-large;
+  }
+
+  &__title-container {
+    width: 100%;
+  }
+
+  &__icon-container {
+    width: 100%;
+    background-color: gainsboro;
+  }
+
+  &__user-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__message-placeholder {
+    font-size: $font-size-normal;
+    color: $text-secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+}

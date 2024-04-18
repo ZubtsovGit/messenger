@@ -1,4 +1,9 @@
-<div class="card {{#if active}}card_active{{/if}}">
-    <img src="{{avatar}}" height="200px" width="200px" />
-    <p>I'm {{ name }} </p>
+<div class="user-card">
+    <img class="user-card__image" src="{{avatar}}" alt="User Avatar" height="50" width="50" />
+    <div class="user-card__info">
+        <p class="user-card__name">{{name}}</p>
+        <p class="user-card__message">{{message}}</p>
+        <p class="user-card__time">{{time}}</p>
+        <p class="user-card__messages-count">{{messages_count}}</p>
+    </div>
 </div>

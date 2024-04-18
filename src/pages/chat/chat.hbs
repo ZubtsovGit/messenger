@@ -1,10 +1,30 @@
-<div>
-    {{> Button label="go to home" type="link" }}
-    <div>
-        <ul>
-            {{#each (users)}}
-                {{> UserCard}}
-            {{/each}}
-        </ul>
-</div>
+<div class="chat-layout">
+    <div class="chat-sidebar">
+        <div class="chat-component">
+            <div class="chat-component__header">
+                <div class="chat-component__title-container">
+                    <span class="chat-component__title">Profile</span>
+                </div>
+                <div class="chat-component__icon-container">
+                    <span class="chat-component__icon">&#128269; Search</span>
+                </div>
+            </div>
+            <ul class="chat-component__user-list">
+                {{#each (users)}}
+                    {{> UserCard}}
+                {{/each}}
+                {{#each (users)}}
+                    {{> UserCard}}
+                {{/each}}
+                {{#each (users)}}
+                    {{> UserCard}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="chat-main">
+        <div class="chat-component__message-placeholder">
+            Pick a chat to send a message
+        </div>
+    </div>
 </div>

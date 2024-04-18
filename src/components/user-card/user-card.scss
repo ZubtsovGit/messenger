@@ -1,21 +1,66 @@
-.card {
+.user-card {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 12px 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: $spacing-small;
+  background-color: $white;
+  border: 1px solid $second-color;
   position: relative;
-  margin: 2px 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: $box-shadow-light;
 
-  &_active {
+  &--active {
     background-color: $second-color;
   }
 
-  &::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: $second-color;
+  &__image {
+    flex-shrink: 0;
+    margin-right: $spacing-small;
+    border-radius: $border-radius-circle;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__name {
+    font-size: $font-size-large;
+    color: $text-color;
+    margin: 2px 0;
+  }
+
+  &__message {
+    font-size: $font-size-normal;
+    color: $text-secondary-color;
+    margin: 2px 0;
+  }
+
+  &__time {
+    font-size: $font-size-small;
+    color: $text-secondary-color;
+    margin: 2px $spacing-small;
     position: absolute;
-    bottom: 0;
+    right: 0;
+    top: 0; // Positions the time in the top right corner of the card
+  }
+
+  &__messages-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: $border-radius-circle;
+    background-color: $main-color; // Use the main blue color
+    color: $white;
+    font-size: $font-size-small;
+    position: absolute;
+    right: 10px; // Right positioning with a small offset
+    bottom: 10px; // Bottom positioning with a small offset
   }
 }
